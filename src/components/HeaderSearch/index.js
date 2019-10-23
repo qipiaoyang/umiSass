@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import { Input, Icon, AutoComplete, message } from 'antd';
+import { Input, Icon, AutoComplete } from 'antd';
 import classNames from 'classnames';
 import styles from './index.less';
 import Debounce from 'lodash-decorators/debounce';
