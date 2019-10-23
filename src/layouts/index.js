@@ -1,9 +1,9 @@
 import { Component } from 'react';
 import { Layout } from 'antd';
-import SiderMenu from "../components/SiderMenu/SiderMenu";
+import SiderMenu from '../components/SiderMenu/SiderMenu';
 import { getMenuData } from '../common/menu';
 import logo from '../assets/logo.svg';
-import GlobalHeader from "../components/GlobalHeader";
+import GlobalHeader from '../components/GlobalHeader';
 
 const { Content, Header } = Layout;
 
@@ -47,9 +47,7 @@ class BasicLayout extends Component {
               onCollapse={this.handleMenuCollapse}
             />
           </Header>
-          <Content style={{ margin: '24px 24px 0', height: '100%' }}>
-            { children }
-          </Content>
+          <Content style={{ margin: '24px 24px 0', height: '100%' }}>{children}</Content>
         </Layout>
       </Layout>
     );
